@@ -1,6 +1,7 @@
 # MoveFast Jetbrains IDE Plugin
 > A plugin that enables Jetbrain's IDEs to navigate multiple lines at once.
-![](./intro.gif)
+
+![](./index.gif)
 
 ### Installation
 >Available in Jetbrains IDE's plugins marketplace! just search for 'MoveFast' and download!  
