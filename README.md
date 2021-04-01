@@ -4,5 +4,5 @@
 ![](./index.gif)
 
 ### Installation
->Available in Jetbrains IDE's plugins marketplace! just search for 'MoveFast' and download!  
+>Available at Jetbrains IDE's plugins marketplace! just search for 'MoveFast' and download!
 >*You may have to re-configure your keymaps. default shortcuts for MoveFast are Alt+Up,Down Arrows. and it can be changed in keymaps.
