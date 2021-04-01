@@ -1,0 +1,1 @@
+C:\Users\Master\source\repos\MoveFaster_Plugin\build\classes\java\main-instrumented\org\kooni_boop\movefaster\MoveFasterActionDown.class;C:\Users\Master\source\repos\MoveFaster_Plugin\build\classes\java\main-instrumented\org\kooni_boop\movefaster\MoveFasterActionUp.class

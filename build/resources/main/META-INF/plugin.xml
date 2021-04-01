@@ -1,0 +1,31 @@
+<idea-plugin>
+  <version>0.3</version>
+  <idea-version since-build="202" until-build="203.*"/>
+  <id>org.kooni_boop.movefaster</id>
+  <name>MoveFaster</name>
+  <depends>com.intellij.modules.platform</depends>
+  <description>
+        
+      Install now and navigate lines 5 times faster! search for 'MoveFaster' in Settings/Keymaps and register your
+      keybindings and you are good to go! (ALT+UP, ALT+DOWN Default)
+    
+    </description>
+  <change-notes>
+        
+      &lt;ul&gt;
+        &lt;li&gt;&lt;b&gt;0.3&lt;/b&gt;Initial release.&lt;/li&gt;
+      &lt;/ul&gt;
+    
+    </change-notes>
+  <vendor url="https://github.com/Kooni-Boop/MoveFast-Jetbrains-IDE-Plugin">Kooni-Boop</vendor>
+  <actions>
+    <action id="MoveFasterUp" class="org.kooni_boop.movefaster.MoveFasterActionUp" text="MoveFasterUp" description="Move cursor up by defined in MoveFaster settings.">
+      <add-to-group group-id="EditorActions" anchor="last"/>
+      <keyboard-shortcut keymap="$default" first-keystroke="alt UP"/>
+    </action>
+    <action id="MoveFasterActionDown" class="org.kooni_boop.movefaster.MoveFasterActionDown" text="MoveFasterActionDown" description="Move cursor down by defined in MoveFaster settings.">
+      <add-to-group group-id="EditorActions" anchor="last"/>
+      <keyboard-shortcut keymap="$default" first-keystroke="alt DOWN"/>
+    </action>
+  </actions>
+</idea-plugin>

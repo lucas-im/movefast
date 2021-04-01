@@ -1,0 +1,8 @@
+icons/SdkIcons.java
+ icons.SdkIcons
+org/kooni_boop/movefaster/config/AppSettingsComponent.java
+ org.kooni_boop.movefaster.config.AppSettingsComponent
+org/kooni_boop/movefaster/config/AppSettingsConfigurable.java
+ org.kooni_boop.movefaster.config.AppSettingsConfigurable
+org/kooni_boop/movefaster/config/AppSettingsState.java
+ org.kooni_boop.movefaster.config.AppSettingsState
