@@ -14,13 +14,14 @@
     <!-- Text to display as description on Preferences/Settings | Plugin page -->
     <description>
         <![CDATA[
-      Install now and navigate lines 5 times faster! search for 'MoveFaster' in Settings/Keymaps and register your
+      Install to navigate lines 5 times faster. search for 'MoveFaster' in Settings/Keymaps and register your
       keybindings and you are good to go! (ALT+UP, ALT+DOWN Default) source code can be found at: https://github.com/Kooni-Boop/MoveFast-Jetbrains-IDE-Plugin
     ]]>
     </description>
     <change-notes>
         <![CDATA[
       <ul>
+        <li><b>0.4</b> - IntelliJ 2021 Platform compatibility support, added move with selection feature</li>
         <li><b>0.3</b> - Initial release.</li>
       </ul>
     ]]>
@@ -49,11 +50,20 @@
             <add-to-group group-id="EditorActions" anchor="last"/>
             <keyboard-shortcut keymap="$default" first-keystroke="alt UP"/>
         </action>
+        <action id="MoveFasterUpWithSelection" class="org.kooni_boop.movefaster.MoveFasterActionUpWithSelection" text="MoveFasterUpWithSelection"
+                description="Move cursor up by defined in MoveFaster settings.">
+            <add-to-group group-id="EditorActions" anchor="last"/>
+            <keyboard-shortcut keymap="$default" first-keystroke="alt shift UP"/>
+        </action>
         <action id="MoveFasterDown" class="org.kooni_boop.movefaster.MoveFasterActionDown"
                 text="MoveFasterDown" description="Move cursor down by defined in MoveFaster settings.">
             <add-to-group group-id="EditorActions" anchor="last"/>
             <keyboard-shortcut keymap="$default" first-keystroke="alt DOWN"/>
         </action>
+        <action id="MoveFasterDownWithSelection" class="org.kooni_boop.movefaster.MoveFasterActionDownWithSelection"
+                text="MoveFasterDownWithSelection" description="Move cursor down by defined in MoveFaster settings.">
+            <add-to-group group-id="EditorActions" anchor="last"/>
+            <keyboard-shortcut keymap="$default" first-keystroke="alt shift DOWN"/>
+        </action>
     </actions>
-
 </idea-plugin>

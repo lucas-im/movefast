@@ -8,9 +8,6 @@ class MoveFasterActionDown : AnAction() {
     override fun actionPerformed(e: AnActionEvent) {
         val editor = e.getData(CommonDataKeys.EDITOR) ?: return;
         val caretModel = editor.caretModel
-
-
-
         caretModel.moveCaretRelatively(0, 5, false, false, true)
     }
 }

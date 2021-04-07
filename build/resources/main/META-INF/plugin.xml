@@ -1,19 +1,20 @@
 <idea-plugin>
-  <version>0.3</version>
-  <idea-version since-build="202" until-build="203.*"/>
+  <version>0.4</version>
+  <idea-version since-build="202" until-build="211.*"/>
   <id>org.kooni_boop.movefaster</id>
   <name>MoveFaster</name>
   <depends>com.intellij.modules.platform</depends>
   <description>
         
       Install now and navigate lines 5 times faster! search for 'MoveFaster' in Settings/Keymaps and register your
-      keybindings and you are good to go! (ALT+UP, ALT+DOWN Default)
+      keybindings and you are good to go! (ALT+UP, ALT+DOWN Default) source code can be found at: https://github.com/Kooni-Boop/MoveFast-Jetbrains-IDE-Plugin
     
     </description>
   <change-notes>
         
       &lt;ul&gt;
-        &lt;li&gt;&lt;b&gt;0.3&lt;/b&gt;Initial release.&lt;/li&gt;
+        &lt;li&gt;&lt;b&gt;0.4&lt;/b&gt; - IntelliJ 2021 Platform compatibility patch, added move with selection feature&lt;/li&gt;
+        &lt;li&gt;&lt;b&gt;0.3&lt;/b&gt; - Initial release.&lt;/li&gt;
       &lt;/ul&gt;
     
     </change-notes>
@@ -23,9 +24,17 @@
       <add-to-group group-id="EditorActions" anchor="last"/>
       <keyboard-shortcut keymap="$default" first-keystroke="alt UP"/>
     </action>
-    <action id="MoveFasterActionDown" class="org.kooni_boop.movefaster.MoveFasterActionDown" text="MoveFasterActionDown" description="Move cursor down by defined in MoveFaster settings.">
+    <action id="MoveFasterUpWithSelection" class="org.kooni_boop.movefaster.MoveFasterActionUpWithSelection" text="MoveFasterUpWithSelection" description="Move cursor up by defined in MoveFaster settings.">
+      <add-to-group group-id="EditorActions" anchor="last"/>
+      <keyboard-shortcut keymap="$default" first-keystroke="alt shift UP"/>
+    </action>
+    <action id="MoveFasterDown" class="org.kooni_boop.movefaster.MoveFasterActionDown" text="MoveFasterDown" description="Move cursor down by defined in MoveFaster settings.">
       <add-to-group group-id="EditorActions" anchor="last"/>
       <keyboard-shortcut keymap="$default" first-keystroke="alt DOWN"/>
+    </action>
+    <action id="MoveFasterDownWithSelection" class="org.kooni_boop.movefaster.MoveFasterActionDownWithSelection" text="MoveFasterDownWithSelection" description="Move cursor down by defined in MoveFaster settings.">
+      <add-to-group group-id="EditorActions" anchor="last"/>
+      <keyboard-shortcut keymap="$default" first-keystroke="alt shift DOWN"/>
     </action>
   </actions>
 </idea-plugin>
