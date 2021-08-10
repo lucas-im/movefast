@@ -1,6 +1,6 @@
 buildscript {
     repositories {
-        maven { url 'http://dl.bintray.com/jetbrains/intellij-plugin-service' }
+        // maven { url 'http://dl.bintray.com/jetbrains/intellij-plugin-service' }
         mavenCentral()
     }
     dependencies {
@@ -16,18 +16,20 @@ plugins {
 }
 
 group 'org.kooni_boop.movefast'
-version '0.4'
+version '0.41'
 
 sourceCompatibility = 1.8
 
 repositories {
     mavenCentral()
-    jcenter()
+//    jcenter()
 }
 
-// See https://github.com/JetBrains/gradle-intellij-plugin/
 intellij {
-    version = '211.6693.111'
+    version System.getenv().getOrDefault('IDEA_VERSION', 'IC-192.5728.98')
+    updateSinceUntilBuild false
+    instrumentCode true
+    downloadSources false
 }
 
 buildSearchableOptions {
@@ -49,6 +51,6 @@ dependencies {
 
 patchPluginXml {
     version = project.version
-    sinceBuild = '202'
-//    untilBuild = '250'
+//    sinceBuild = '*'
+//    untilBuild = '*'
 }

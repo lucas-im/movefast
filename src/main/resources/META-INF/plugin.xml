@@ -21,7 +21,8 @@
     <change-notes>
         <![CDATA[
       <ul>
-        <li><b>0.4</b> - IntelliJ 2021 Platform compatibility support, added move with selection feature</li>
+        <li><b>0.41</b> - Compatability fixes.</li>
+        <li><b>0.4</b> - IntelliJ 2021 Platform compatibility support, added move with selection feature.</li>
         <li><b>0.3</b> - Initial release.</li>
       </ul>
     ]]>
