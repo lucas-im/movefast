@@ -1,6 +1,5 @@
 buildscript {
     repositories {
-        // maven { url 'http://dl.bintray.com/jetbrains/intellij-plugin-service' }
         mavenCentral()
     }
     dependencies {
@@ -22,14 +21,6 @@ sourceCompatibility = 1.8
 
 repositories {
     mavenCentral()
-//    jcenter()
-}
-
-intellij {
-    version System.getenv().getOrDefault('IDEA_VERSION', 'IC-192.5728.98')
-    updateSinceUntilBuild false
-    instrumentCode true
-    downloadSources false
 }
 
 buildSearchableOptions {
@@ -51,6 +42,4 @@ dependencies {
 
 patchPluginXml {
     version = project.version
-//    sinceBuild = '*'
-//    untilBuild = '*'
 }
