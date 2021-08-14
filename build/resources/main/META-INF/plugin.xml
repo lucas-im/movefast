@@ -1,5 +1,6 @@
 <idea-plugin>
   <version>0.41</version>
+  <idea-version since-build="212.4746" until-build="212.*"/>
   <id>org.kooni_boop.movefaster</id>
   <name>MoveFaster</name>
   <depends>com.intellij.modules.platform</depends>
